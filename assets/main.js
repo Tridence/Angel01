@@ -1,6 +1,9 @@
 const welcome = () => {
-    const inputValue = document.querySelector('input').value
-    const generatedElemement = document.createElement('p');
-    generatedElemement.innerHTML = '<p>Hello ${input}, Welcome to the Bootcamp';
-    document.body.appendChild(generatedElemement);
+    const inputValue =  document.querySelector("input").value;
+
+    const generatedElement = document.createElement("p");
+    const text = document.createTextNode(`Hello ${inputValue}, welcome to the bootcamp`);
+
+    generatedElement.appendChild(text);
+    document.body.appendChild(generatedElement);
 }
