@@ -1,4 +1,6 @@
-function myFunction() {
-    var input = document.getElementById("userInput").value;
-    alert('Hello ' + input + ' welcome to the bootcamp');
+const welcome = () => {
+    const inputValue = document.querySelector('input').value
+    const generatedElemement = document.createElement('p');
+    generatedElemement.innerHTML = '<p>Hello ${input}, Welcome to the Bootcamp';
+    document.body.appendChild(generatedElemement);
 }
